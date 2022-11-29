@@ -1,0 +1,19 @@
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{%load static%}
+
+<link rel="stylesheet" href="{% static 'style.css'%}">
+<center>
+   
+    <h1 style="margin: 50px;">Registration</h1>
+    
+    <form method="POST" class="Login">
+    {%csrf_token%}
+    {{form.as_p}}
+    {% buttons %}
+    <button type="submit" class="btn btn-primary" style="margin: 50px;background-color: #fe9900;color: black;border-color: #fe9900;">
+      Submit
+    </button>
+  {% endbuttons %}
+</form></center>

@@ -1,0 +1,25 @@
+<!-- {% load static %}
+<link href="{% static './style.css' %}" rel="stylesheet"/> -->
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+<body style="background-color: #181818;color:white;">
+    <div class="contain">
+     <div class="container">
+      <div class="music-player">
+        <br>
+        <br>
+<form method="post" enctype="multipart/form-data">
+    {%csrf_token%}
+    {% bootstrap_form form %}
+    {% buttons %}
+    <button type="submit" class="btn btn-primary" style="background-color: #fe9900;border-color: #fe9900;">
+        Submit
+      </button>
+    {% endbuttons %}
+       
+</form>
+</div>
+</div>
+</div>
+</body>

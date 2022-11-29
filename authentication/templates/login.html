@@ -1,0 +1,23 @@
+
+{%load static%}
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+
+
+    
+    <br>
+    <form method="post" class="form-body">
+      <center><h1 style="margin: 50px;">Log In</h1>
+        {% csrf_token %}
+        {{form.as_p}}
+        {% buttons %}
+    <button type="submit" class="btn btn-primary" style="margin: 50px;background-color: #fe9900;border-color: #fe9900;">
+      Submit
+    </button>
+  {% endbuttons %}
+        <!-- <button class="btn btn-success btn-block">Log In</button> -->
+      </form>
+      <br>
+      <h4>Don't have an account? Please <a href="{% url 'register'%}" style="color:#fe9900;border-color: #fe9900;">Sign Up</a> First</h4></center>

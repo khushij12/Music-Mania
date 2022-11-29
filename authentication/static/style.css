@@ -1,0 +1,42 @@
+/* .asteriskField {
+    display: none;
+} */
+
+/* .login{
+    background-image: url('images.jpeg');
+    background-repeat: no-repeat;
+} */
+
+body{
+    /*background-color: darkorange; */
+    background-image: url("Images/1.jpeg");
+    background-position: center; 
+     background-repeat: no-repeat;
+    color: #fff;
+    font-size: bolder;
+    font-family: 'Courier New', Courier, monospace;
+    /* margin:70px; */
+}
+
+form{
+    /* margin-top: 150px;
+    margin-left: 250px; */
+    padding:6px 50px;
+    border-style: solid;
+    border-color: #fff;
+}
+.form-body{
+    margin: 100px 500px;
+    
+
+}
+
+button{
+/*     margin-left: 100px; */
+background-color: #fe9900;
+color:rgb(0, 0, 0);
+}
+
+a{
+    color: #fe9900;
+}
